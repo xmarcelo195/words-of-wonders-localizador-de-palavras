@@ -30,11 +30,11 @@ with open(r'dicio\size_7.txt', 'r') as f:
       palavra = palavra.rstrip('\n')
       size_4.append(palavra)
 
-
+# repetir o script até o usuário clicar em cntrol+c no cmd
 try:
 
     while True:
-        # listas em branco que receberão as respostas
+        # listas em branco que receberá as respostas encontradas
         letras_3 = []
         letras_4 = []
         letras_5 = []
@@ -44,7 +44,7 @@ try:
         # input das letras disponiveis
         letras_input = input('digite as letras: ')
 
-        #comparar
+        #comparar letras disponiveis com dicionario
         i = 0
         sizes = [size_3, size_4, size_5, size_6, size_7]
         while i<=4:
